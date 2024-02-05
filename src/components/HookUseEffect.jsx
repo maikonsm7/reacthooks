@@ -11,6 +11,14 @@ const HookUseEffect = () => {
     useEffect(() => {
         console.log('Estou executando...')
     }, [numero])
+
+    // cleanup do useEffect - nao deixar nada ser executado em outras paginas. ex: um fetch
+    // useEffect(() => {
+    //     const timer = setTimeout(()=>{
+    //            console.log('Hello word!')
+    //        }, 3000)
+    //        return () => clearTimeout(timer)
+    // }, [numero])
     
     return(
         <div>
