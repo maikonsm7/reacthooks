@@ -3,12 +3,12 @@ import SomeComponent from "./SomeComponent"
 
 const HookUseImperativeHandle = () => {
     // nesse exemplo estou executando uma uma funcao no componente filho ao clicar no botao pai
-    const inputRef = useRef()
+    const componentRef = useRef()
     return(
         <div>
             <h3>useImperativeHandle</h3>
-            <SomeComponent ref={inputRef}/>
-            <button onClick={() => inputRef.current.validate()}>Validate</button>
+            <SomeComponent ref={componentRef}/>
+            <button onClick={() => componentRef.current.validate()}>Validate</button>
             <hr />
         </div>
     )
